@@ -1,8 +1,6 @@
-import { useState } from "react";
-
 import { Navbar } from "./Navbar";
 import { ProperyGrip } from "./PropertyGrip";
-import { Reflection } from "@gfazioli/mantine-reflection";
+
 import {
   Box,
   Group,
@@ -11,15 +9,12 @@ import {
   Stack,
   Container,
   Text,
-  Mark,
   Button,
   Paper,
-  SimpleGrid,
 } from "@mantine/core";
 
-
 import imagen from "../imagenes/imagen.png";
-import imagen02 from "../imagenes/imagen02.png";
+
 import imagen03 from "../imagenes/Imagen03.png";
 import classes from "./Navbar.module.css";
 
@@ -35,9 +30,8 @@ export function PropertyScreen() {
         "Planificacion familiar",
         "Tratamiento de infecciones",
         "Cirugia Ginecologica",
-        "Colocación y retiro de implantes subdermicos y T de cobre"
+        "Colocación y retiro de implantes subdermicos y T de cobre",
       ],
-    
     },
     {
       id: 2,
@@ -60,7 +54,6 @@ export function PropertyScreen() {
         "Manejo de la menopausia",
         "Chequeos de Rutina",
       ],
-    
     },
   ];
 
@@ -120,7 +113,7 @@ export function PropertyScreen() {
               </Group>
             </Container>
           </Box>
-               <Box id="sobre-mi" p="sm">
+          <Box id="sobre-mi" p="sm">
             <Container>
               <Title order={1} className={classes.tituloSubrayado}>
                 Sobre Mi
@@ -128,37 +121,35 @@ export function PropertyScreen() {
             </Container>
           </Box>
 
-          <Box  p="sm">
+          <Box p="sm">
             <Container>
-             
-                <Paper
-                  p="xl"
-                  radius="md"
-                  withBorder
-                  className={classes.inicioBox}
-                >
-                  <Group p="xl" justify="center" align="center">
+              <Paper
+                p="xl"
+                radius="md"
+                withBorder
+                className={classes.inicioBox}
+              >
+                <Group p="xl" justify="center" align="center">
                   <Image
-                    h={320} 
+                    h={320}
                     w={220}
-                    radius="xl" 
+                    radius="xl"
                     src={imagen03}
                     alt="Foto Profesional"
                   />
-                    <Text ta="justify">
-                      Soy la Dra. Ivonne Sanchez , medica especialista en
-                      Ginecologia y Obstetricia comprometida con el
-                      bienestarintegral de mis pacientes. mi enfoque combina
-                      experiencia profesional , tecnolofia de vanguardia y un
-                      trato humano y personalizado. <br />
-                      Creo firmemetne que cada mujer merece atencion medica de
-                      calidad en un ambiente de confianza y respeto. Mi mision
-                      es acompañarte en cada etapa de tu vida con el mejor
-                      cuidado posible.
-                    </Text>
-                  </Group>
-                </Paper>
-         
+                  <Text ta="justify">
+                    Soy la Dra. Ivonne Sanchez , medica especialista en
+                    Ginecologia y Obstetricia comprometida con el
+                    bienestarintegral de mis pacientes. mi enfoque combina
+                    experiencia profesional , tecnolofia de vanguardia y un
+                    trato humano y personalizado. <br />
+                    Creo firmemetne que cada mujer merece atencion medica de
+                    calidad en un ambiente de confianza y respeto. Mi mision es
+                    acompañarte en cada etapa de tu vida con el mejor cuidado
+                    posible.
+                  </Text>
+                </Group>
+              </Paper>
             </Container>
           </Box>
 

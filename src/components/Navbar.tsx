@@ -6,7 +6,6 @@ import {
   Container,
   Stack,
   Text,
-  NavLink,
   Anchor,
 } from "@mantine/core";
 import classes from "./Navbar.module.css";
