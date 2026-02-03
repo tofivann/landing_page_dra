@@ -19,7 +19,7 @@ export function Navbar() {
             <Anchor
               href="#inicio"
               underline="never"
-              style={{ color: "inherit" }}
+              
             >
               <Stack  align="flex-start">
                 <Title order={3} c="pink" style={{ lineHeight: 1 }}>
