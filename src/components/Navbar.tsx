@@ -63,6 +63,9 @@ export function Navbar({ opened, toggle }: NavbarProps) {
               variant="gradient"
               gradient={{ from: "red", to: "grape", deg: 100 }}
               radius="xl"
+              component="a"
+              href="https://wa.me/584147378754"
+              target="_blank"
             >
               Agenda Tu Cita
             </Button>

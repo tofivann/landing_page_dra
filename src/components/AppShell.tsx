@@ -26,7 +26,7 @@ export function Demo() {
         <Stack gap="lg">
           <Anchor href="#sobre-mi" onClick={toggle} c="pink" size="xl">Sobre Mí</Anchor>
           <Anchor href="#Servicios" onClick={toggle} c="pink" size="xl">Servicios</Anchor>
-          <Anchor href="#contacto" onClick={toggle} c="pink" size="xl">Contacto</Anchor>
+          <Anchor href="https://wa.me/584147378754"  target="_blank" onClick={toggle} c="pink" size="xl">Agenda tu cita</Anchor>
         </Stack>
       </AppShell.Navbar>
 
