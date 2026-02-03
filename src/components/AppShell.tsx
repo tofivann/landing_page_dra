@@ -16,7 +16,7 @@ export function Demo() {
         breakpoint: 'sm', 
         collapsed: { desktop: true, mobile: !opened },
       }}
-      padding="md"
+   
     >
       <AppShell.Header>
         <Navbar opened={opened} toggle={toggle}/>
