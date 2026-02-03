@@ -4,7 +4,7 @@ import { PropertyScreen } from "./components/PropertyScreen";
 import {Demo} from "./components/AppShell"
 function App() {
   const theme = createTheme({
-    fontFamily: "'Crimson Text', serif",
+    fontFamily: "'Google Sans', serif",
   });
 
   return (
