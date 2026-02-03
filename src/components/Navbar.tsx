@@ -17,12 +17,12 @@ export function Navbar() {
         <Group justify="space-between">
           <Group gap="xs">
             <Stack align="flex-star">
-              <Anchor href="#inicio" underline="never" size="lg">
+              <Anchor href="#inicio" underline="never" >
                 <Title order={3} c="pink">
                   Dr.Ivonne Sanchez
                 </Title>
 
-                <Text c="dimmed" className={classes.specialtyText}>
+                <Text  c="dimmed"  className={classes.specialtyText}>
                   Ginecologia y Obstetricia
                 </Text>
               </Anchor>
