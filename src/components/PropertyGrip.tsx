@@ -15,7 +15,7 @@ interface ProperyGripProps {
 
 export function ProperyGrip({ listaServicios }: ProperyGripProps) {
   return (
-    <Box id="Servicios" bg="gray.0">
+    <Box id="Servicios"  m="lg" bg="gray.0">
       <Container>
         <Title order={1} className={classes.tituloSubrayado}>
           Servicios
