@@ -48,6 +48,9 @@ export function HeroSection() {
                   variant="gradient"
                   gradient={{ from: "white", to: "red", deg: 100 }}
                   radius="xl"
+                  component="a"
+                  href="#Servicios"
+                  
                 >
                   Conocer Servicios
                 </Button>
