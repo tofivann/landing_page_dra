@@ -16,17 +16,21 @@ export function Navbar() {
       <Container p="xs">
         <Group justify="space-between">
           <Group gap="xs">
-            <Stack align="flex-star">
-              <Anchor href="#inicio" underline="never" >
-                <Title order={3} c="pink">
-                  Dr.Ivonne Sanchez
+            <Anchor
+              href="#inicio"
+              underline="never"
+              style={{ color: "inherit" }}
+            >
+              <Stack  align="flex-start">
+                <Title order={3} c="pink" style={{ lineHeight: 1 }}>
+                  Dr. Ivonne Sanchez
                 </Title>
 
-                <Text  c="dimmed"  className={classes.specialtyText}>
+                <Text size="xs" c="dimmed" className={classes.specialtyText}>
                   Ginecologia y Obstetricia
                 </Text>
-              </Anchor>
-            </Stack>
+              </Stack>
+            </Anchor>
           </Group>
           <Group>
             <Anchor

@@ -13,7 +13,7 @@ import imagen03 from "../imagenes/Imagen03.png";
 
 export function AboutSection() {
   return (
-    <Box id="sobre-mi">
+    <Box id="sobre-mi" m="lg">
       <Box p="sm">
         <Container>
           <Title order={1} className={classes.tituloSubrayado}>
