@@ -11,7 +11,12 @@ import {
 } from "@mantine/core";
 import classes from "./Navbar.module.css";
 
-export function Navbar({ opened, toggle }) {
+interface NavbarProps {
+  opened: boolean;      
+  toggle: () => void;   
+}
+
+export function Navbar({ opened, toggle }: NavbarProps) {
   return (
     <Box component="header" bg="white">
       <Container p="xs">
