@@ -1,6 +1,7 @@
 import "./App.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 import { PropertyScreen } from "./components/PropertyScreen";
+import {Demo} from "./components/AppShell"
 function App() {
   const theme = createTheme({
     fontFamily: "'Crimson Text', serif",
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <MantineProvider theme={theme}>
-      <PropertyScreen></PropertyScreen>
+     <Demo></Demo>
     </MantineProvider>
   );
 }

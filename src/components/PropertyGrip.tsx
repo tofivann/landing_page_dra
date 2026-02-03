@@ -1,6 +1,6 @@
-import { Container, Box, SimpleGrid } from "@mantine/core";
+import { Container, Box, SimpleGrid , Title} from "@mantine/core";
 
-import "../index.css";
+import classes from "./Navbar.module.css";
 import { CardServicio } from "./CardServicio";
 
 interface Propiedad {
@@ -15,8 +15,11 @@ interface ProperyGripProps {
 
 export function ProperyGrip({ listaServicios }: ProperyGripProps) {
   return (
-    <Box bg="gray.0" mih="100vh" p="lg">
+    <Box id="Servicios" bg="gray.0" mih="100vh" p="lg">
       <Container>
+        <Title order={1} className={classes.tituloSubrayado}>
+          Servicios
+        </Title>
         <SimpleGrid
           cols={{ base: 1, sm: 2, md: 3 }}
           spacing="lg"

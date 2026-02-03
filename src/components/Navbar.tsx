@@ -11,8 +11,6 @@ import {
 import classes from "./Navbar.module.css";
 
 export function Navbar() {
-  console.log("Mis clases son:", classes);
-
   return (
     <Box component="header" bg="white">
       <Container p="xs">
