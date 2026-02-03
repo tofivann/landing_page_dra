@@ -21,6 +21,8 @@ export function ProperyGrip({ listaServicios }: ProperyGripProps) {
           Servicios
         </Title>
         <SimpleGrid
+        p={"0"}
+        m="sm"
           cols={{ base: 1, sm: 2, md: 3 }}
           spacing="lg"
           verticalSpacing="lg"

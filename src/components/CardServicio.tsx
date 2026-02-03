@@ -13,7 +13,7 @@ interface CardProps {
 
 export function CardServicio({ servicio }: CardProps) {
   return (
-    <Card key={servicio.id} shadow="sm" padding="lg" radius="md" withBorder>
+    <Card key={servicio.id} shadow="sm" padding="lg" radius="md" withBorder m="sm">
       <Card.Section></Card.Section>
 
       <Group justify="space-between" mt="md" mb="xs">
