@@ -1,24 +1,18 @@
-import { AppShell} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { Navbar } from './Navbar';
-import { PropertyScreen } from './PropertyScreen';
+import { AppShell } from "@mantine/core";
+
+import { Navbar } from "./Navbar";
+import { PropertyScreen } from "./PropertyScreen";
 
 export function Demo() {
-  const [opened, { toggle }] = useDisclosure();
-
   return (
-    <AppShell
-      padding="md"
-      header={{ height: 80 }}
-     
-    >
+    <AppShell padding="md" header={{ height: 80 }}>
       <AppShell.Header>
-       <Navbar/>
+        <Navbar />
       </AppShell.Header>
 
-    
-
-      <AppShell.Main><PropertyScreen/></AppShell.Main>
+      <AppShell.Main>
+        <PropertyScreen />
+      </AppShell.Main>
     </AppShell>
   );
 }

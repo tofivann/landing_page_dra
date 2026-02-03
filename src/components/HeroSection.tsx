@@ -20,7 +20,7 @@ export function HeroSection() {
         <Group justify="space-between" p="sm" ta={"justify"}>
           <Group>
             <Stack align="center">
-              <Title order={1} c="black" >
+              <Title order={1} c="black">
                 Cuidado Integral de la
               </Title>
               <Title order={1} c="pink">

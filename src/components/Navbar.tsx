@@ -17,14 +17,14 @@ export function Navbar() {
         <Group justify="space-between">
           <Group gap="xs">
             <Stack align="flex-star">
-              <Anchor href="#inicio"  underline="never" size="lg">
-              <Title order={3} c="pink">
-                Dr.Ivonne Sanchez
-              </Title>
+              <Anchor href="#inicio" underline="never" size="lg">
+                <Title order={3} c="pink">
+                  Dr.Ivonne Sanchez
+                </Title>
 
-              <Text c="dimmed" className={classes.specialtyText}>
-                Ginecologia y Obstetricia
-              </Text>
+                <Text c="dimmed" className={classes.specialtyText}>
+                  Ginecologia y Obstetricia
+                </Text>
               </Anchor>
             </Stack>
           </Group>
@@ -33,7 +33,6 @@ export function Navbar() {
               size="lg"
               c="pink"
               href="#sobre-mi"
-            
               underline="never"
               className={classes.navLink}
             >
@@ -43,7 +42,6 @@ export function Navbar() {
               c="pink"
               size="lg"
               href="#Servicios"
-             
               underline="never"
               className={classes.navLink}
             >

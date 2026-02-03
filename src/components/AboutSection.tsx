@@ -3,10 +3,8 @@ import {
   Group,
   Title,
   Image,
-  Stack,
   Container,
   Text,
-  Button,
   Paper,
 } from "@mantine/core";
 import classes from "./Navbar.module.css";

@@ -1,7 +1,6 @@
 import "./App.css";
 import { createTheme, MantineProvider } from "@mantine/core";
-import { PropertyScreen } from "./components/PropertyScreen";
-import {Demo} from "./components/AppShell"
+import { Demo } from "./components/AppShell";
 function App() {
   const theme = createTheme({
     fontFamily: "'Google Sans', serif",
@@ -9,7 +8,7 @@ function App() {
 
   return (
     <MantineProvider theme={theme}>
-     <Demo></Demo>
+      <Demo></Demo>
     </MantineProvider>
   );
 }

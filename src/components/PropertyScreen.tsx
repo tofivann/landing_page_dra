@@ -1,18 +1,7 @@
-import { Navbar } from "./Navbar";
 import { ProperyGrip } from "./PropertyGrip";
 import { AboutSection } from "./AboutSection";
 import { HeroSection } from "./HeroSection";
-import {
-  Box,
-  Group,
-  Title,
-  Image,
-  Stack,
-  Container,
-  Text,
-  Button,
-  Paper,
-} from "@mantine/core";
+import { Box, Container } from "@mantine/core";
 
 export function PropertyScreen() {
   const listaServicios = [

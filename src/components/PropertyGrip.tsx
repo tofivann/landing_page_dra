@@ -1,4 +1,4 @@
-import { Container, Box, SimpleGrid , Title} from "@mantine/core";
+import { Container, Box, SimpleGrid, Title } from "@mantine/core";
 
 import classes from "./Navbar.module.css";
 import { CardServicio } from "./CardServicio";
