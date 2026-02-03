@@ -15,8 +15,8 @@ import imagen03 from "../imagenes/Imagen03.png";
 
 export function AboutSection() {
   return (
-    <Box>
-      <Box id="sobre-mi" p="sm">
+    <Box id="sobre-mi">
+      <Box p="sm">
         <Container>
           <Title order={1} className={classes.tituloSubrayado}>
             Sobre Mi

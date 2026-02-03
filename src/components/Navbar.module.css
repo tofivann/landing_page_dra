@@ -28,3 +28,9 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+:global(#inicio),
+:global(#sobre-mi), 
+:global(#servicios), 
+:global(#contacto) {
+  scroll-margin-top: 80px;
+}

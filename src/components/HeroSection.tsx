@@ -10,16 +10,17 @@ import {
 } from "@mantine/core";
 
 import imagen from "../imagenes/imagen.png";
+
 import classes from "./Navbar.module.css";
 
 export function HeroSection() {
   return (
     <Box id="inicio" className={classes.inicioBox}>
       <Container>
-        <Group justify="space-between" p="sm">
+        <Group justify="space-between" p="sm" ta={"justify"}>
           <Group>
             <Stack align="center">
-              <Title order={1} c="black">
+              <Title order={1} c="black" >
                 Cuidado Integral de la
               </Title>
               <Title order={1} c="pink">
