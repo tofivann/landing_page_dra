@@ -7,15 +7,17 @@ import {
   Stack,
   Text,
   Anchor,
+  Burger,
 } from "@mantine/core";
 import classes from "./Navbar.module.css";
 
-export function Navbar() {
+export function Navbar({ opened, toggle }) {
   return (
     <Box component="header" bg="white">
       <Container p="xs">
         <Group justify="space-between">
           <Group gap="xs">
+            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" color="pink" />
             <Anchor
               href="#inicio"
               underline="never"
@@ -32,7 +34,7 @@ export function Navbar() {
               </Stack>
             </Anchor>
           </Group>
-          <Group>
+          <Group visibleFrom="sm">
             <Anchor
               size="lg"
               c="pink"
