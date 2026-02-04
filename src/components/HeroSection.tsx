@@ -19,7 +19,7 @@ export function HeroSection() {
       <Container>
         <Group justify="space-between" p="sm" ta={"justify"}>
           <Group>
-            <Stack align="center">
+            <Stack align="center" ta={"justify"}>
               <Title order={1} c="black">
                 Cuidado Integral de la
               </Title>
@@ -53,7 +53,6 @@ export function HeroSection() {
                   radius="xl"
                   component="a"
                   href="#Servicios"
-                  
                 >
                   Conocer Servicios
                 </Button>

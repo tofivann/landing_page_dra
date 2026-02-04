@@ -12,8 +12,8 @@ import {
 import classes from "./Navbar.module.css";
 
 interface NavbarProps {
-  opened: boolean;      
-  toggle: () => void;   
+  opened: boolean;
+  toggle: () => void;
 }
 
 export function Navbar({ opened, toggle }: NavbarProps) {
@@ -22,15 +22,17 @@ export function Navbar({ opened, toggle }: NavbarProps) {
       <Container p="xs">
         <Group justify="space-between">
           <Group gap="xs">
-            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" color="pink" />
-            <Anchor
-              href="#inicio"
-              underline="never"
-              
-            >
-              <Stack  align="flex-start">
+            <Burger
+              opened={opened}
+              onClick={toggle}
+              hiddenFrom="sm"
+              size="sm"
+              color="pink"
+            />
+            <Anchor href="#inicio" underline="never">
+              <Stack align="flex-start">
                 <Title order={3} c="pink" style={{ lineHeight: 1 }}>
-                  Dr. Ivonne Sanchez
+                  Dra. Ivonne Sanchez
                 </Title>
 
                 <Text size="xs" c="dimmed" className={classes.specialtyText}>

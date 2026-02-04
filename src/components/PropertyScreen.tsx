@@ -2,12 +2,13 @@ import { ProperyGrip } from "./PropertyGrip";
 import { AboutSection } from "./AboutSection";
 import { HeroSection } from "./HeroSection";
 import { Box, Container } from "@mantine/core";
-
+import { IconUserHeart, IconStethoscope, IconActivity } from '@tabler/icons-react';
 export function PropertyScreen() {
   const listaServicios = [
     {
       id: 1,
       area: "Ginecologia General ",
+      icon: IconUserHeart,
       servicios: [
         "Consulta ginecologica",
         "Prueba de Papanicolau",
@@ -21,6 +22,7 @@ export function PropertyScreen() {
     {
       id: 2,
       area: "Control Prenatal",
+      icon: IconStethoscope,
       servicios: [
         "Seguimiento de embarazo",
         "Ultrasonidos obtétricos",
@@ -33,6 +35,7 @@ export function PropertyScreen() {
     {
       id: 3,
       area: "Medicina Preventiva",
+      icon: IconActivity,
       servicios: [
         "Detección de cancer",
         "Climaterio",
