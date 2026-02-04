@@ -19,8 +19,8 @@ export function HeroSection() {
       <Container>
         <Group justify="space-between" p="sm" ta={"justify"}>
           <Group>
-            <Stack align="center" ta={"justify"}>
-              <Title order={1} c="black">
+            <Stack align="center" >
+              <Title order={1} c="black" ta="center">
                 Cuidado Integral de la
               </Title>
               <Title order={1} c="pink">
