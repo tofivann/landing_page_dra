@@ -25,7 +25,7 @@ export function AboutSection() {
       </Box>
 
       <Box p="sm">
-        <Container>
+        <Container size={"xl"}>
           <Paper radius="md" withBorder className={classes.inicioBox}>
             <Group p="xl" justify="center" align="center">
               <Image
