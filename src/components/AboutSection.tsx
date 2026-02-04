@@ -15,6 +15,7 @@ import "@mantine/carousel/styles.css";
 import imagen03 from "../imagenes/Imagen03.png";
 import imagen05 from "../imagenes/imagen05.png";
 import imagen06 from "../imagenes/imagen06.png";
+import imagen07 from "../imagenes/imagen07.png.jpeg";
 
 export function AboutSection() {
   return (
@@ -33,6 +34,11 @@ export function AboutSection() {
                 radius="xl"
                 src={imagen03}
                 alt="Foto Profesional"
+                style={{
+                  boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)",
+
+                  border: "1px solid var(--mantine-color-gray-1)",
+                }}
               />
               <Text ta="justify" maw={350}>
                 Soy la Dra. Ivonne Sanchez, medica especialista en Ginecologia y
@@ -47,7 +53,7 @@ export function AboutSection() {
 
             <Divider
               my="sm"
-              label="Nuestras Instalaciones"
+              label="Experiencia y Especialización"
               labelPosition="center"
               color="pink.1"
             />
@@ -73,6 +79,15 @@ export function AboutSection() {
                   <Image
                     src={imagen06}
                     alt="Consultorio 2"
+                    h={360}
+                    fit="cover"
+                    radius="md"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <Image
+                    src={imagen07}
+                    alt="Consultorio 3"
                     h={360}
                     fit="cover"
                     radius="md"
