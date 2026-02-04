@@ -47,20 +47,16 @@ export function AboutSection() {
               </Text>
               <Carousel
                 slideSize="70%"
-                height={360} 
-                w={350}
+                height={360}
+                w={300}
                 slideGap="md"
-                loop={true}
-                align="start"
-                
-                dragFree={false}
                 withIndicators
               >
                 <Carousel.Slide>
                   <Image
                     src={imagen05}
                     alt="Consultorio 1"
-                    h={360} 
+                    h={360}
                     w="100%"
                     fit="cover"
                     radius="md"
@@ -78,7 +74,6 @@ export function AboutSection() {
                   />
                 </Carousel.Slide>
 
-                {/* Puedes repetir slides para probar el loop si solo tienes dos fotos */}
                 <Carousel.Slide>
                   <Image
                     src={imagen05}

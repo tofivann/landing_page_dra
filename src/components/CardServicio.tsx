@@ -1,5 +1,5 @@
 import { Text, Card, Group, List, Center } from "@mantine/core";
-import type { Icon } from '@tabler/icons-react';
+import type { Icon } from "@tabler/icons-react";
 import "../index.css";
 
 interface Propiedad {
@@ -24,14 +24,14 @@ export function CardServicio({ servicio }: CardProps) {
       m="sm"
     >
       <Card.Section p="md" bg="var(--mantine-color-pink-0)">
-      <Center>
-        <servicio.icon
-          size={48} 
-          stroke={1.5} 
-          color="var(--mantine-color-pink-6)" 
-        />
-      </Center>
-    </Card.Section>
+        <Center>
+          <servicio.icon
+            size={48}
+            stroke={1.5}
+            color="var(--mantine-color-pink-6)"
+          />
+        </Center>
+      </Card.Section>
 
       <Group justify="space-between" mt="md" mb="xs">
         <Text fw={500}>{servicio.area}</Text>

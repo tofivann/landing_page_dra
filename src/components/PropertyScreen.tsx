@@ -2,7 +2,11 @@ import { ProperyGrip } from "./PropertyGrip";
 import { AboutSection } from "./AboutSection";
 import { HeroSection } from "./HeroSection";
 import { Box, Container } from "@mantine/core";
-import { IconUserHeart, IconStethoscope, IconActivity } from '@tabler/icons-react';
+import {
+  IconUserHeart,
+  IconStethoscope,
+  IconActivity,
+} from "@tabler/icons-react";
 export function PropertyScreen() {
   const listaServicios = [
     {

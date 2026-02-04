@@ -2,7 +2,7 @@ import { Container, Box, SimpleGrid, Title } from "@mantine/core";
 
 import classes from "./Navbar.module.css";
 import { CardServicio } from "./CardServicio";
-import type { Icon } from '@tabler/icons-react';
+import type { Icon } from "@tabler/icons-react";
 
 interface Propiedad {
   id: number;
