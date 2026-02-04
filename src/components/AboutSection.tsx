@@ -12,12 +12,17 @@ import {
 import { Carousel } from "@mantine/carousel";
 import classes from "./Navbar.module.css";
 import "@mantine/carousel/styles.css";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
+
 import imagen03 from "../imagenes/Imagen03.png";
 import imagen05 from "../imagenes/imagen05.png";
 import imagen06 from "../imagenes/imagen06.png";
 import imagen07 from "../imagenes/imagen07.png.jpeg";
 
 export function AboutSection() {
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
+
   return (
     <Box id="sobre-mi" py="xl">
       <Container>
@@ -60,6 +65,10 @@ export function AboutSection() {
 
             <Group justify="center">
               <Carousel
+                key="about-carousel"
+                plugins={[autoplay.current]}
+                onMouseEnter={autoplay.current.stop}
+                onMouseLeave={autoplay.current.reset}
                 slideSize="100%"
                 height={360}
                 w={{ base: "100%", sm: 350 }}

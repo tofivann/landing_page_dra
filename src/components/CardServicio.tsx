@@ -38,8 +38,10 @@ export function CardServicio({ servicio }: CardProps) {
       </Group>
 
       <List>
-        {servicio.servicios.map((item) => (
-          <List.Item c="pink">{item}</List.Item>
+        {servicio.servicios.map((item, index) => (
+          <List.Item key={index} c="pink">
+            {item}
+          </List.Item>
         ))}
       </List>
     </Card>
