@@ -50,7 +50,7 @@ export function AboutSection() {
                 height={360} 
                 w={350}
                 slideGap="md"
-                loop
+                loop={true}
                 align="start"
                 
                 dragFree={false}
