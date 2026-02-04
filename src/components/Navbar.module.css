@@ -1,0 +1,36 @@
+.specialtyText {
+  margin-top: -15px !important;
+  display: block !important;
+}
+
+.navLink {
+  display: inline-block;
+  transition: transfrom 0.2s ease;
+}
+.navLink:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.inicioBox {
+  background-color: rgb(255, 240, 246) !important;
+}
+
+.tituloSubrayado {
+  text-decoration: underline !important;
+  text-decoration-color: var(
+    --mantine-color-pink-filled
+  ) !important; /* Usamos la variable de Mantine */
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 7px !important;
+
+  width: fit-content !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+:global(#inicio),
+:global(#sobre-mi),
+:global(#Servicios),
+:global(#contacto) {
+  scroll-margin-top: 110px;
+}
