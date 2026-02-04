@@ -30,7 +30,7 @@ export function Navbar({ opened, toggle }: NavbarProps) {
               color="pink"
             />
             <Anchor href="#inicio" underline="never">
-              <Stack align={{ base: 'center', sm: 'flex-start' }}>
+              <Stack align='flex-start'>
                 <Title order={3} c="pink" style={{ lineHeight: 1 }} ta={{ base: 'center', sm: 'left' }}>
                   Dra. Ivonne Sanchez
                 </Title>
