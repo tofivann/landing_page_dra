@@ -9,7 +9,7 @@ import {
   Button,
 } from "@mantine/core";
 
-import imagen03 from "../imagenes/imagen03.png";
+import imagen03 from "../imagenes/Imagen03.png";
 import classes from "./Navbar.module.css";
 
 export function HeroSection() {
