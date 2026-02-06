@@ -31,7 +31,7 @@ export function Demo() {
       </AppShell.Header>
 
       <AppShell.Navbar>
-        <Stack gap="lg">
+        <Stack gap="lg" pl={4}>
           <Anchor href="#sobre-mi" onClick={toggle} c="pink" size="xl">
             Sobre Mí
           </Anchor>

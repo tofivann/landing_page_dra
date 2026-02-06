@@ -6,6 +6,7 @@ import {
   Text,
   Anchor,
   Burger,
+  Flex,
 } from "@mantine/core";
 import classes from "./Navbar.module.css";
 
@@ -16,14 +17,19 @@ interface NavbarProps {
 
 export function Navbar({ opened, toggle }: NavbarProps) {
   return (
-    <Group justify="space-between" h="100%" px="md">
-      <Group justify="center">
+    <Group justify="space-between" h="100%" px="md" wrap="nowrap">
+      <Flex
+        direction={{ base: "column", sm: "row" }}
+        align="center"
+        gap={{ base: 8, sm: "md" }}
+        style={{ flex: 1 }}
+      >
         <Anchor href="#inicio" underline="never">
-          <Stack align="stretch">
+          <Stack gap={4}>
             <Title
               order={3}
               c="pink"
-              style={{ lineHeight: 1 }}
+              style={{ lineHeight: 2, whiteSpace: "nowrap" }}
               ta={{ base: "center", sm: "left" }}
             >
               Dra. Ivonne Sanchez
@@ -32,17 +38,16 @@ export function Navbar({ opened, toggle }: NavbarProps) {
             <Text
               size="xs"
               c="dimmed"
+              pl={4}
               className={classes.specialtyText}
-              style={{
-                lineHeight: 1,
-                marginLeft: "2px",
-              }}
+              style={{ lineHeight: 1, letterSpacing: "0.5px" }}
               ta={{ base: "center", sm: "left" }}
             >
               Ginecologia y Obstetricia
             </Text>
           </Stack>
         </Anchor>
+
         <Burger
           opened={opened}
           onClick={toggle}
@@ -50,7 +55,7 @@ export function Navbar({ opened, toggle }: NavbarProps) {
           size="sm"
           color="pink"
         />
-      </Group>
+      </Flex>
       <Group visibleFrom="sm">
         <Anchor
           size="lg"
