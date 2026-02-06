@@ -1,11 +1,13 @@
-import { AppShell, Stack, Anchor } from "@mantine/core";
+import { AppShell, Stack, Anchor, Container } from "@mantine/core";
 
 import { Navbar } from "./Navbar";
 import { PropertyScreen } from "./PropertyScreen";
-import { useDisclosure } from "@mantine/hooks";
+import { useDisclosure, useWindowScroll } from "@mantine/hooks";
 
 export function Demo() {
   const [opened, { toggle }] = useDisclosure();
+  const [scroll] = useWindowScroll();
+  const scrolled = scroll.y > 20;
   return (
     <AppShell
       header={{ height: 80 }}
@@ -14,12 +16,21 @@ export function Demo() {
         breakpoint: "sm",
         collapsed: { desktop: true, mobile: !opened },
       }}
+      padding={0}
     >
-      <AppShell.Header>
-        <Navbar opened={opened} toggle={toggle} />
+      <AppShell.Header
+        style={{
+          backgroundColor: scrolled ? "rgba(255, 255, 255, 0.7)" : "white",
+          backdropFilter: scrolled ? "blur(10px)" : "none",
+          transition: "all 0.3s ease",
+        }}
+      >
+        <Container size="lg" h="100%">
+          <Navbar opened={opened} toggle={toggle} />
+        </Container>
       </AppShell.Header>
 
-      <AppShell.Navbar p="md">
+      <AppShell.Navbar>
         <Stack gap="lg">
           <Anchor href="#sobre-mi" onClick={toggle} c="pink" size="xl">
             Sobre Mí

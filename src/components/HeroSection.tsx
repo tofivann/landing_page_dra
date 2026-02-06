@@ -9,29 +9,34 @@ import {
   Button,
 } from "@mantine/core";
 
-import imagen from "../imagenes/imagen.png";
-
+import imagen03 from "../imagenes/imagen03.png";
 import classes from "./Navbar.module.css";
 
 export function HeroSection() {
   return (
     <Box id="inicio" className={classes.inicioBox}>
-      <Container>
-        <Group justify="space-between" p="sm" ta={"justify"}>
-          <Group>
-            <Stack align="center">
-              <Title order={1} c="black" ta="center">
-                Cuidado Integral de la
+      <Container p="lg">
+        <Group justify="space-between" p="sm">
+          <Group style={{ flex: 1 }}>
+            <Stack>
+              <Title
+                order={1}
+                c="black"
+                ta="left"
+                fz={{ base: "2.2rem", sm: "3rem" }}
+              >
+                Cuidado Integral de la{" "}
+                <Text span c="pink" fz={{ base: "2.2rem", sm: "3rem" }}>
+                  Salud Femenina
+                </Text>
               </Title>
-              <Title order={1} c="pink">
-                Salud Femenina
-              </Title>
+
               <Text maw="350" ta="justify">
                 Atencion medica especializada con calidez humana y la mas alta
                 calidad profesional. Tu bienestar es mi prioridad
               </Text>
 
-              <Group>
+              <Group justify="center">
                 <Button
                   className={classes.navLink}
                   c="white"
@@ -41,6 +46,7 @@ export function HeroSection() {
                   component="a"
                   href="https://wa.me/584147378754"
                   target="_blank"
+                  size="lg"
                 >
                   Agendar Consulta
                 </Button>
@@ -53,18 +59,26 @@ export function HeroSection() {
                   radius="xl"
                   component="a"
                   href="#Servicios"
+                  size="lg"
                 >
                   Conocer Servicios
                 </Button>
               </Group>
             </Stack>
           </Group>
-          <Group p="sm">
+          <Group justify="center" w={{ base: "100%", sm: "40%" }}>
             <Image
               radius="md"
               w={{ base: "100%", sm: 350 }}
-              maw={{ base: "100%", sm: 500 }}
-              src={imagen}
+              h={{ base: "auto", sm: 350 }}
+              src={imagen03}
+              alt="Foto Profesional"
+              fit="cover"
+              style={{
+                objectPosition: "center 0%",
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)",
+                border: "1px solid var(--mantine-color-pink-1)",
+              }}
             />
           </Group>
         </Group>

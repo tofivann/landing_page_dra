@@ -1,6 +1,7 @@
 import { Text, Card, Group, List, Center } from "@mantine/core";
 import type { Icon } from "@tabler/icons-react";
 import "../index.css";
+import classes from "./Navbar.module.css";
 
 interface Propiedad {
   id: number;
@@ -22,6 +23,7 @@ export function CardServicio({ servicio }: CardProps) {
       radius="md"
       withBorder
       m="sm"
+      className={classes.cardServicio}
     >
       <Card.Section p="md" bg="var(--mantine-color-pink-0)">
         <Center>
@@ -29,6 +31,7 @@ export function CardServicio({ servicio }: CardProps) {
             size={48}
             stroke={1.5}
             color="var(--mantine-color-pink-6)"
+            className={classes.iconAnimate}
           />
         </Center>
       </Card.Section>

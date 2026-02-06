@@ -19,7 +19,7 @@ export function ProperyGrip({ listaServicios }: ProperyGripProps) {
   return (
     <Box id="Servicios" bg="gray.0">
       <Container>
-        <Title order={1} className={classes.tituloSubrayado}>
+        <Title order={1} className={classes.tituloSubrayado} mt={60} p={40}>
           Servicios
         </Title>
         <SimpleGrid

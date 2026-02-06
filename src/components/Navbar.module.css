@@ -34,3 +34,28 @@
 :global(#contacto) {
   scroll-margin-top: 110px;
 }
+
+.cardServicio {
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  border: 1px solid var(--mantine-color-gray-3);
+}
+
+.cardServicio:hover {
+  border-color: var(--mantine-color-pink-6) !important;
+  transform: translateY(-5px);
+  box-shadow: var(--mantine-shadow-md);
+}
+
+.cardServicio:hover .iconAnimate {
+  transform: scale(1.15);
+
+  color: var(--mantine-color-pink-7);
+}
+
+.iconAnimate {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}

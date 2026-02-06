@@ -3,7 +3,7 @@ import { createTheme, MantineProvider } from "@mantine/core";
 import { Demo } from "./components/AppShell";
 function App() {
   const theme = createTheme({
-    fontFamily: "'Google Sans', serif",
+    fontFamily: "'Montserrat','Google Sans', serif",
   });
 
   return (

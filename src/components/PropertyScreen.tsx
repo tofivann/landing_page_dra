@@ -41,7 +41,7 @@ export function PropertyScreen() {
       area: "Medicina Preventiva",
       icon: IconActivity,
       servicios: [
-        "Detección de cancer",
+        "Detección de cancer de cuello uterino",
         "Climaterio",
         "Manejo de la menopausia",
         "Chequeos de Rutina",
