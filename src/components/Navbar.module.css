@@ -40,7 +40,8 @@
 :global(#inicio),
 :global(#sobre-mi),
 :global(#Servicios),
-:global(#contacto) {
+:global(#Mi-trabajo),
+:global(#Contactos) {
   scroll-margin-top: 110px;
 }
 
