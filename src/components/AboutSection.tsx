@@ -15,7 +15,13 @@ export function AboutSection() {
   return (
     <Box id="sobre-mi">
       <Container>
-        <Title order={1} className={classes.tituloSubrayado} m={30} p={40}>
+        <Title
+          order={1}
+          className={classes.tituloSubrayado}
+          m={30}
+          pt={40}
+          ta="center"
+        >
           Sobre Mi
         </Title>
         <Paper radius="md" withBorder p="xl" className={classes.inicioBox}>

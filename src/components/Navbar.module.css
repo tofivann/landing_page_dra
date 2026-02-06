@@ -17,16 +17,25 @@
 }
 
 .tituloSubrayado {
-  text-decoration: underline !important;
-  text-decoration-color: var(
-    --mantine-color-pink-filled
-  ) !important; /* Usamos la variable de Mantine */
-  text-decoration-thickness: 3px !important;
-  text-underline-offset: 7px !important;
+  position: relative;
 
-  width: fit-content !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  padding-bottom: 15px;
+}
+
+.tituloSubrayado::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centra la línea perfectamente */
+
+  width: 60px;
+
+  height: 4px;
+
+  background-color: var(--mantine-color-pink-filled);
+
+  border-radius: 2px;
 }
 :global(#inicio),
 :global(#sobre-mi),

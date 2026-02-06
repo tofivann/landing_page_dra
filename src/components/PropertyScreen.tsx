@@ -1,6 +1,7 @@
 import { ProperyGrip } from "./PropertyGrip";
 import { AboutSection } from "./AboutSection";
 import { HeroSection } from "./HeroSection";
+import { MyJobs } from "./MyJobs";
 import { Box } from "@mantine/core";
 import {
   IconUserHeart,
@@ -54,6 +55,7 @@ export function PropertyScreen() {
       <HeroSection></HeroSection>
       <AboutSection></AboutSection>
       <ProperyGrip listaServicios={listaServicios}></ProperyGrip>
+      <MyJobs></MyJobs>
     </Box>
   );
 }
