@@ -21,7 +21,7 @@ export function MyJobs() {
     },
     {
       src: imgPostparto,
-      title: "Atencion Postparto",
+      title: "Atencion Posparto",
     },
   ];
 
