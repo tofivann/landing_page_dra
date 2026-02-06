@@ -14,8 +14,13 @@ import classes from "./Navbar.module.css";
 
 export function HeroSection() {
   return (
-    <Box id="inicio" className={classes.inicioBox}>
-      <Container p="lg">
+    <Box
+      id="inicio"
+      className={classes.inicioBox}
+      pt={{ base: 20, sm: 80 }}
+      pb={{ base: 40, sm: 90 }}
+    >
+      <Container>
         <Group justify="space-between" p="sm">
           <Group style={{ flex: 1 }}>
             <Stack>
@@ -69,8 +74,8 @@ export function HeroSection() {
           <Group justify="center" w={{ base: "100%", sm: "40%" }}>
             <Image
               radius="md"
-              w={{ base: "100%", sm: 350 }}
-              h={{ base: "auto", sm: 350 }}
+              w={{ base: "100%", sm: 500 }}
+              h={{ base: "auto", sm: 500 }}
               src={imagen03}
               alt="Foto Profesional"
               fit="cover"

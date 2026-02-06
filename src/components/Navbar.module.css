@@ -68,3 +68,20 @@
     transform 0.3s ease,
     color 0.3s ease;
 }
+
+.footer {
+  background-color: var(--mantine-color-pink-filled);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-top: 80px;
+}
+
+.bottomFooter {
+  @media (max-width: 48em) {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: center !important;
+  }
+}

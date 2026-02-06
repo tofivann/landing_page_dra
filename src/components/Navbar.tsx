@@ -75,6 +75,24 @@ export function Navbar({ opened, toggle }: NavbarProps) {
         >
           Servicios
         </Anchor>
+        <Anchor
+          c="pink"
+          size="lg"
+          href="#Mi-trabajo"
+          underline="never"
+          className={classes.navLink}
+        >
+          Mi Trabajo
+        </Anchor>
+        <Anchor
+          c="pink"
+          size="lg"
+          href="#Contactos"
+          underline="never"
+          className={classes.navLink}
+        >
+          Contacto
+        </Anchor>
         <Button
           className={classes.navLink}
           variant="gradient"

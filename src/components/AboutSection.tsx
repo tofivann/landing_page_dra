@@ -27,7 +27,7 @@ export function AboutSection() {
         <Paper radius="md" withBorder p="xl" className={classes.inicioBox}>
           <Stack gap="xl">
             <Group justify="center" align="center" gap="xl">
-              <Text ta="justify" maw={500}>
+              <Text ta="justify" maw={700}>
                 Soy la Dra. Ivonne Sanchez, medica especialista en Ginecologia y
                 Obstetricia comprometida con el bienestar integral de mis
                 pacientes. Mi enfoque combina experiencia profesional,

@@ -3,6 +3,7 @@ import { AppShell, Stack, Anchor, Container } from "@mantine/core";
 import { Navbar } from "./Navbar";
 import { PropertyScreen } from "./PropertyScreen";
 import { useDisclosure, useWindowScroll } from "@mantine/hooks";
+import { Footer } from "./Footer";
 
 export function Demo() {
   const [opened, { toggle }] = useDisclosure();
@@ -38,6 +39,12 @@ export function Demo() {
           <Anchor href="#Servicios" onClick={toggle} c="pink" size="xl">
             Servicios
           </Anchor>
+          <Anchor href="#Mi-trabajo" onClick={toggle} c="pink" size="xl">
+            Mi trabajo
+          </Anchor>
+          <Anchor href="#Contactos" onClick={toggle} c="pink" size="xl">
+            Contacto
+          </Anchor>
           <Anchor
             href="https://wa.me/584147378754"
             target="_blank"
@@ -53,6 +60,10 @@ export function Demo() {
       <AppShell.Main>
         <PropertyScreen />
       </AppShell.Main>
+
+      <AppShell.Footer pos="static">
+        <Footer />
+      </AppShell.Footer>
     </AppShell>
   );
 }
