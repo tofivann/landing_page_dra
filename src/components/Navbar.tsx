@@ -51,7 +51,7 @@ export function Navbar({ opened, toggle }: NavbarProps) {
         <Burger
           opened={opened}
           onClick={toggle}
-          hiddenFrom="sm"
+          hiddenFrom="md"
           size="sm"
           color="pink"
         />
