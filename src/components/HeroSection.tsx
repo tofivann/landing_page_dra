@@ -37,8 +37,7 @@ export function HeroSection() {
               </Title>
 
               <Text maw="350" ta="justify">
-                Atencion medica especializada con calidez humana y la mas alta
-                calidad profesional. Tu bienestar es mi prioridad
+                Atención médica especializada con calidez humana y la más alta calidad profesional. Tu bienestar es mi prioridad.
               </Text>
 
               <Group justify="center">
