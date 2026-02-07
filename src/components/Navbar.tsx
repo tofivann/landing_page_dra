@@ -56,7 +56,7 @@ export function Navbar({ opened, toggle }: NavbarProps) {
           color="pink"
         />
       </Flex>
-      <Group visibleFrom="sm">
+      <Group visibleFrom="md">
         <Anchor
           size="lg"
           c="pink"
