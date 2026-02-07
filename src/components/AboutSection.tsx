@@ -28,12 +28,12 @@ export function AboutSection() {
           <Stack gap="xl">
             <Group justify="center" align="center" gap="xl">
               <Text ta="justify" maw={700}>
-                Soy la Dra. Ivonne Sanchez, medica especialista en Ginecologia y
+                Soy la Dra. Ivonne Sánchez, médica especialista en Ginecologia y
                 Obstetricia comprometida con el bienestar integral de mis
                 pacientes. Mi enfoque combina experiencia profesional,
                 tecnologia de vanguardia y un trato humano y personalizado.
                 <br /> <br />
-                Creo firmemente que cada mujer merece atencion medica de calidad
+                Creo firmemente que cada mujer merece atención médica de calidad
                 en un ambiente de confianza y respeto.
               </Text>
             </Group>
