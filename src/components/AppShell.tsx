@@ -14,7 +14,7 @@ export function Demo() {
       header={{ height: 80 }}
       navbar={{
         width: "100%",
-        breakpoint: "sm",
+        breakpoint: "md",
         collapsed: { desktop: true, mobile: !opened },
       }}
       padding={0}
